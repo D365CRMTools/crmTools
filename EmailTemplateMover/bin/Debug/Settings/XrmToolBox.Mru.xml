@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMostRecentlyUsedItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MostRecentlyUsedItem>
+    <ConnectionId>82f33f2e-259d-40da-9646-3904cbdf3256</ConnectionId>
+    <ConnectionName>sales</ConnectionName>
+    <Date>2026-09-16T15:40:11.8048652+05:30</Date>
+    <PluginName>Email Template Mover</PluginName>
+  </MostRecentlyUsedItem>
+  <MostRecentlyUsedItem>
+    <ConnectionId>63f4a453-7197-42f0-ab01-7084e7feac0a</ConnectionId>
+    <ConnectionName>service</ConnectionName>
+    <Date>2026-09-16T12:51:02.9841541+05:30</Date>
+    <PluginName>Email Template Mover</PluginName>
+  </MostRecentlyUsedItem>
+  <MostRecentlyUsedItem>
+    <ConnectionId>00000000-0000-0000-0000-000000000000</ConnectionId>
+    <Date>2026-09-16T21:56:49.4828157+05:30</Date>
+    <PluginName>Email Template Mover</PluginName>
+  </MostRecentlyUsedItem>
+</ArrayOfMostRecentlyUsedItem>

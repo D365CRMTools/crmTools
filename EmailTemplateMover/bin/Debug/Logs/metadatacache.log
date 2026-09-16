@@ -1,0 +1,3 @@
+2026-09-16 12:33:41.561 PM	Error	Failed to read version stamp from NTFS alternate stream 'D:\XRMPlugin\EmailTemplateMover\bin\Debug\Metadata\82f33f2e-259d-40da-9646-3904cbdf3256.json.gz:ClientVersionStamp', will load from main cache file.
+2026-09-16 12:33:51.879 PM	Error	Failed to read version stamp from NTFS alternate stream 'D:\XRMPlugin\EmailTemplateMover\bin\Debug\Metadata\63f4a453-7197-42f0-ab01-7084e7feac0a.json.gz:ClientVersionStamp', will load from main cache file.
+2026-09-16 12:34:54.507 PM	Error	Failed to read version stamp from NTFS alternate stream 'D:\XRMPlugin\EmailTemplateMover\bin\Debug\Metadata\63f4a453-7197-42f0-ab01-7084e7feac0a.json.gz:ClientVersionStamp', will load from main cache file.

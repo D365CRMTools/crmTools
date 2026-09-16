@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrmConnections xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ByPassProxyOnLocal>false</ByPassProxyOnLocal>
+  <Connections>
+    <ConnectionDetail>
+      <AuthType>OnlineFederation</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <BrowserName>None</BrowserName>
+      <ConnectionId>82f33f2e-259d-40da-9646-3904cbdf3256</ConnectionId>
+      <ConnectionName>sales</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>unqb35e67ee269df111996a002248d5c</Organization>
+      <OrganizationDataServiceUrl>https://org863481f2.api.crm8.dynamics.com/api/data/v9.2/</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>Sales Trial</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://org863481f2.api.crm8.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>org863481f2</OrganizationUrlName>
+      <OrganizationVersion>9.2.26085.142</OrganizationVersion>
+      <OriginalUrl>https://org863481f2.crm8.dynamics.com</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>org863481f2.crm8.dynamics.com</ServerName>
+      <ServerPort />
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName>asifpg@vimranchotugmail.onmicrosoft.com</UserName>
+      <WebApplicationUrl>https://org863481f2.crm8.dynamics.com</WebApplicationUrl>
+    </ConnectionDetail>
+    <ConnectionDetail>
+      <AuthType>OnlineFederation</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <BrowserName>None</BrowserName>
+      <ConnectionId>63f4a453-7197-42f0-ab01-7084e7feac0a</ConnectionId>
+      <ConnectionName>service</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>unq24cd7a5329b0f1118ade002248d5c</Organization>
+      <OrganizationDataServiceUrl>https://orgad7f5ae3.api.crm8.dynamics.com/api/data/v9.2/</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>CustomerService Trial</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://orgad7f5ae3.api.crm8.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>orgad7f5ae3</OrganizationUrlName>
+      <OrganizationVersion>9.2.26083.148</OrganizationVersion>
+      <OriginalUrl>https://orgad7f5ae3.crm8.dynamics.com</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>orgad7f5ae3.crm8.dynamics.com</ServerName>
+      <ServerPort />
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName>asifpg@vimranchotugmail.onmicrosoft.com</UserName>
+      <WebApplicationUrl>https://orgad7f5ae3.crm8.dynamics.com</WebApplicationUrl>
+    </ConnectionDetail>
+  </Connections>
+  <IsReadOnly>false</IsReadOnly>
+  <Name>Default</Name>
+  <UseCustomProxy>false</UseCustomProxy>
+  <UseDefaultCredentials>false</UseDefaultCredentials>
+  <UseDetailsView>false</UseDetailsView>
+  <UseInternetExplorerProxy>true</UseInternetExplorerProxy>
+  <UseMruDisplay>false</UseMruDisplay>
+</CrmConnections>

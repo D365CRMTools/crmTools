@@ -1,0 +1,23 @@
+{
+  "ShowEmptyProjects": false,
+  "SelectedGroups": [
+    "D:\\XRMPlugin\\EmailTemplateMover\\MyPluginControl.resx",
+    "D:\\XRMPlugin\\EmailTemplateMover\\Properties\\Resources.resx"
+  ],
+  "ExpandedProjects": [
+    "D:\\XRMPlugin\\EmailTemplateMover\\EmailTemplateMover.csproj"
+  ],
+  "EnableSpellChecker": true,
+  "ColumnOrder": [
+    "name",
+    "file-path",
+    "file-name",
+    "type",
+    "neutral-value",
+    "neutral-comment"
+  ],
+  "VisibleColumnKeys": [
+    "name",
+    "neutral-value"
+  ]
+}
