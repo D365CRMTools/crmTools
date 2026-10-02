@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>D:\XRMPlugin\EmailTemplateMover\bin\Debug\XrmToolBox.exe</StartProgram>
+    <StartProgram>C:\Users\vimra\source\repos\crmTools\EmailTemplateMover\bin\Debug\XrmToolBox.exe</StartProgram>
     <StartWorkingDirectory>
     </StartWorkingDirectory>
     <StartArguments>/overridepath:.</StartArguments>

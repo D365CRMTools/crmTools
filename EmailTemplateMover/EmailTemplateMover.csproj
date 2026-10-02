@@ -14,6 +14,14 @@
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <!-- NuGet Package Properties -->
+    <PackageId>VSK.MSCrm.XrmToolBox.EmailTemplateMover</PackageId>
+    <PackageVersion>1.2025.7.75</PackageVersion>
+    <Authors>vimran</Authors>
+    <Description>Transfer Email Templates across Dynamics 365 environments using XrmToolBox</Description>
+    <PackageProjectUrl>https://github.com/D365CRMTools/crmtools.git</PackageProjectUrl>
+    <PackageIcon>email.png</PackageIcon>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -262,6 +270,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="email.png">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PluginControl.resx">

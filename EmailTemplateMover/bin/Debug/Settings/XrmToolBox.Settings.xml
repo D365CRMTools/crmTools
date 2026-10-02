@@ -45,7 +45,8 @@
   <NumberOfDaysToShowNewRibbon>7</NumberOfDaysToShowNewRibbon>
   <ShowCategoriesExpanded>false</ShowCategoriesExpanded>
   <UseLegacyToolsList>false</UseLegacyToolsList>
-  <LastAdvertisementDisplay>2026-09-16T12:33:43.2888385+05:30</LastAdvertisementDisplay>
+  <LastAdvertisementDisplay>2026-09-30T23:51:06.9215537+05:30</LastAdvertisementDisplay>
+  <LastConnection>cs</LastConnection>
   <LastPlugin />
   <LastUpdateCheck>0001-01-01T00:00:00</LastUpdateCheck>
   <MostUsedList>
@@ -54,7 +55,7 @@
       <Name>EmailTemplateMover.MyPlugin</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>15</Count>
+      <Count>56</Count>
       <Name>EmailTemplateMover.Plugin</Name>
     </PluginUseCount>
   </MostUsedList>
@@ -68,15 +69,15 @@
   <PluginsStoreShowUpdates xsi:nil="true" />
   <PluginsUpdateSkip>
     <PluginUpdateSkip>
-      <Date>2026-09-17T12:32:14.5455832+05:30</Date>
+      <Date>2026-10-03T16:01:02.1985593+05:30</Date>
       <Name>McTools.Xrm.ConnectionControls</Name>
       <Version>1.2025.9.64</Version>
     </PluginUpdateSkip>
   </PluginsUpdateSkip>
   <FormSize>
-    <Height>588</Height>
-    <IsMaximized>false</IsMaximized>
-    <Width>1043</Width>
+    <Height>832</Height>
+    <IsMaximized>true</IsMaximized>
+    <Width>1552</Width>
   </FormSize>
   <RememberSession>false</RememberSession>
   <ByPassProxyOnLocal>false</ByPassProxyOnLocal>

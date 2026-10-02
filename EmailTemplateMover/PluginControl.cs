@@ -11,6 +11,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using XrmToolBox.Extensibility;
 using XrmToolBox.Extensibility.Args;
@@ -22,7 +23,6 @@ namespace EmailTemplateMover
         private Settings mySettings;
         private readonly TemplatesMover myTemplatesMover;
         public event EventHandler<StatusBarMessageEventArgs> SendMessageToStatusBar;
-
         public PluginControl()
         {
             InitializeComponent();
@@ -74,6 +74,8 @@ namespace EmailTemplateMover
         }
         private void transTemp_Click(object sender, EventArgs e)
         {
+            var source = lblSource_Env_nm;
+            var target = lblTarget_Env_nm;
             if (listView1.CheckedItems.Count > 0 || listView1.SelectedItems.Count>0) {
                 var selectedTemplates = listView1.CheckedItems.Cast<ListViewItem>()
                     .Union(listView1.SelectedItems.Cast<ListViewItem>()).Select(item => (Entity)item.Tag).ToList();
@@ -100,6 +102,7 @@ namespace EmailTemplateMover
                             newEtc = myTemplatesMover.GetEntityTypeCode(targetService, targetedEntityLogicalName);                         
                             myTemplatesMover.ReRouteEtcViaOpenXML(template, name,"template", oldEtc, newEtc);
                             var templateToTransfer = new Entity(template.LogicalName);
+
                             string[] attributesToSkip = { "templateid", "createdon", "modifiedon", "versionnumber" };
                             foreach (var attribute in template.Attributes)
                             {
@@ -125,7 +128,7 @@ namespace EmailTemplateMover
                             {
                                 targetService.Create(templateToTransfer);
                             }
-                            Log(name, true);
+                            Log( name, true);
 
                         }
                         catch (Exception error)
@@ -176,11 +179,13 @@ namespace EmailTemplateMover
         }
         private void ldtemp_Click(object sender, EventArgs e)
         {
+            listBox_log.Items.Clear();
             ExecuteMethod(RetrieTemp);
         }
         private void RetrieTemp()
         {
             listView1.Items.Clear();
+            listBox_log.Items.Clear();
             ldtemp.Enabled = false;
             trsTemp.Enabled = false;
             btnSelectTarg.Enabled = false;
@@ -227,6 +232,40 @@ namespace EmailTemplateMover
                         $"{(succeeded ? "Success" : "Error")}: {name}{(message != null ? " : " + message : "")}");
                 });
             }
+        }
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void lblSource_Env_nm_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inptSearchBox_Click(object sender, EventArgs e)
+        {
+            
+            if (inptSearchBox == null && listView1 == null) return;            
+            String search_Txt = inptSearchBox.Text;
+                foreach (ListViewItem item in listView1.Items)
+                {
+                String text = item.Text.ToLower();
+                if (!text.Contains(search_Txt))
+                {
+                    item.Remove();
+                }
+            }
+          
+        }
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            listBox_log.Items.Clear();
+            inptSearchBox.Clear();
+            ExecuteMethod(RetrieTemp);
         }
     }
 }

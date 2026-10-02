@@ -33,6 +33,8 @@
             this.ldtemp = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.trsTemp = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.inptSearchBox = new System.Windows.Forms.ToolStripTextBox();
             this.lblSource = new System.Windows.Forms.Label();
             this.lblSource_Env_nm = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -45,12 +47,16 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox_log = new System.Windows.Forms.ListBox();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,11 +71,16 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ldtemp,
             this.toolStripSeparator1,
-            this.trsTemp});
+            this.trsTemp,
+            this.toolStripSeparator2,
+            this.toolStripLabel1,
+            this.inptSearchBox,
+            this.toolStripSeparator3,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(1479, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1479, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -78,7 +89,7 @@
             this.ldtemp.Image = ((System.Drawing.Image)(resources.GetObject("ldtemp.Image")));
             this.ldtemp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ldtemp.Name = "ldtemp";
-            this.ldtemp.Size = new System.Drawing.Size(132, 24);
+            this.ldtemp.Size = new System.Drawing.Size(132, 28);
             this.ldtemp.Text = "Load Template";
             this.ldtemp.Click += new System.EventHandler(this.ldtemp_Click);
             // 
@@ -96,10 +107,24 @@
             this.trsTemp.Text = "Transfer Template";
             this.trsTemp.Click += new System.EventHandler(this.transTemp_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // inptSearchBox
+            // 
+            this.inptSearchBox.AutoToolTip = true;
+            this.inptSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inptSearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.inptSearchBox.Name = "inptSearchBox";
+            this.inptSearchBox.Size = new System.Drawing.Size(100, 27);
+            this.inptSearchBox.TextChanged += new System.EventHandler(this.inptSearchBox_Click);
+            // 
             // lblSource
             // 
             this.lblSource.AutoSize = true;
-            this.lblSource.Location = new System.Drawing.Point(6, 48);
+            this.lblSource.Location = new System.Drawing.Point(4, 61);
             this.lblSource.Name = "lblSource";
             this.lblSource.Size = new System.Drawing.Size(135, 16);
             this.lblSource.TabIndex = 2;
@@ -109,11 +134,12 @@
             // 
             this.lblSource_Env_nm.AutoSize = true;
             this.lblSource_Env_nm.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblSource_Env_nm.Location = new System.Drawing.Point(155, 48);
+            this.lblSource_Env_nm.Location = new System.Drawing.Point(155, 61);
             this.lblSource_Env_nm.Name = "lblSource_Env_nm";
             this.lblSource_Env_nm.Size = new System.Drawing.Size(104, 16);
             this.lblSource_Env_nm.TabIndex = 3;
             this.lblSource_Env_nm.Text = "Not selected yet";
+            this.lblSource_Env_nm.Click += new System.EventHandler(this.lblSource_Env_nm_Click);
             // 
             // listView1
             // 
@@ -130,13 +156,14 @@
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 76);
+            this.listView1.Location = new System.Drawing.Point(0, 80);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1422, 396);
+            this.listView1.Size = new System.Drawing.Size(1422, 393);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -201,21 +228,33 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.LightYellow;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1422, 29);
+            this.panel1.Size = new System.Drawing.Size(1422, 36);
             this.panel1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(427, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(605, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Transfering templates using this tool may cause \"UnManaged Layer\" in Managed Solu" +
+    "tion.                     ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(651, 16);
+            this.label2.Size = new System.Drawing.Size(591, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Click on \"Load Templates\" to display and select template(s) to transfer          " +
-    "                                                                  ";
+            this.label2.Text = "Click on \"Load Templates\" to display and select template(s) to transfer.         " +
+    "                                              ";
             // 
             // groupBox2
             // 
@@ -267,8 +306,7 @@
             // 
             // listBox_log
             // 
-            this.listBox_log.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.listBox_log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox_log.FormattingEnabled = true;
             this.listBox_log.ItemHeight = 16;
@@ -276,6 +314,26 @@
             this.listBox_log.Name = "listBox_log";
             this.listBox_log.Size = new System.Drawing.Size(1422, 36);
             this.listBox_log.TabIndex = 0;
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(53, 24);
+            this.toolStripLabel1.Text = "Search";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(82, 28);
+            this.toolStripButton1.Text = "Refresh";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // PluginControl
             // 
@@ -330,5 +388,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox listBox_log;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripTextBox inptSearchBox;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

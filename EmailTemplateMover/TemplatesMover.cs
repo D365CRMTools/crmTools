@@ -15,7 +15,7 @@ namespace EmailTemplateMover
     {
         public List<Entity> GetTemplates(IOrganizationService service)
         {
-            QueryExpression qe = new QueryExpression("template") { ColumnSet = new ColumnSet("title", "createdon", "modifiedon", "templatetypecode", "languagecode") };
+            QueryExpression qe = new QueryExpression("template") { ColumnSet = new ColumnSet("title", "safehtml", "createdon", "modifiedon", "templatetypecode", "languagecode", "subjectsafehtml","description") };
             var results = service.RetrieveMultiple(qe);
             if (results != null && results.Entities != null && results.Entities.Count > 0)
             {
@@ -57,9 +57,9 @@ namespace EmailTemplateMover
         }
         public void ReRouteEtcViaOpenXML(Entity template, string name, string etc, string oldEtc, string newEtc)
         {
-            if (oldEtc == null || newEtc == null || oldEtc == newEtc)
+            if (oldEtc == null || newEtc == null)
                 return;
-            string[] contentFields = { "body", "subject", "presentationxml", "languagecode" };
+            string[] contentFields = { "presentationxml", "safehtml", "subjectsafehtml","description" };
             foreach (string fieldName in contentFields)
             {
                 if (template.Contains(fieldName) && template[fieldName] != null)
