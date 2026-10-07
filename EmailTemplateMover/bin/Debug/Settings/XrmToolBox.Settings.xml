@@ -55,7 +55,7 @@
       <Name>EmailTemplateMover.MyPlugin</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>56</Count>
+      <Count>57</Count>
       <Name>EmailTemplateMover.Plugin</Name>
     </PluginUseCount>
   </MostUsedList>
@@ -69,7 +69,7 @@
   <PluginsStoreShowUpdates xsi:nil="true" />
   <PluginsUpdateSkip>
     <PluginUpdateSkip>
-      <Date>2026-10-03T16:01:02.1985593+05:30</Date>
+      <Date>2026-10-08T21:22:57.6478818+05:30</Date>
       <Name>McTools.Xrm.ConnectionControls</Name>
       <Version>1.2025.9.64</Version>
     </PluginUpdateSkip>
