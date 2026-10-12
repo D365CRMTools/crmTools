@@ -139,7 +139,6 @@
             this.lblSource_Env_nm.Size = new System.Drawing.Size(104, 16);
             this.lblSource_Env_nm.TabIndex = 3;
             this.lblSource_Env_nm.Text = "Not selected yet";
-            this.lblSource_Env_nm.Click += new System.EventHandler(this.lblSource_Env_nm_Click);
             // 
             // listView1
             // 

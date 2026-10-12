@@ -45,7 +45,7 @@
   <NumberOfDaysToShowNewRibbon>7</NumberOfDaysToShowNewRibbon>
   <ShowCategoriesExpanded>false</ShowCategoriesExpanded>
   <UseLegacyToolsList>false</UseLegacyToolsList>
-  <LastAdvertisementDisplay>2026-09-30T23:51:06.9215537+05:30</LastAdvertisementDisplay>
+  <LastAdvertisementDisplay>2026-10-10T21:55:25.769511+05:30</LastAdvertisementDisplay>
   <LastConnection>cs</LastConnection>
   <LastPlugin />
   <LastUpdateCheck>0001-01-01T00:00:00</LastUpdateCheck>
@@ -55,7 +55,7 @@
       <Name>EmailTemplateMover.MyPlugin</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>57</Count>
+      <Count>65</Count>
       <Name>EmailTemplateMover.Plugin</Name>
     </PluginUseCount>
   </MostUsedList>
@@ -69,7 +69,7 @@
   <PluginsStoreShowUpdates xsi:nil="true" />
   <PluginsUpdateSkip>
     <PluginUpdateSkip>
-      <Date>2026-10-08T21:22:57.6478818+05:30</Date>
+      <Date>2026-10-11T21:55:30.2066096+05:30</Date>
       <Name>McTools.Xrm.ConnectionControls</Name>
       <Version>1.2025.9.64</Version>
     </PluginUpdateSkip>

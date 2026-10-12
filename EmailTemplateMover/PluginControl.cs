@@ -76,6 +76,7 @@ namespace EmailTemplateMover
         {
             var source = lblSource_Env_nm;
             var target = lblTarget_Env_nm;
+            if(source.Text == target.Text) { MessageBox.Show(@"Source & Target cant be same environment", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             if (listView1.CheckedItems.Count > 0 || listView1.SelectedItems.Count>0) {
                 var selectedTemplates = listView1.CheckedItems.Cast<ListViewItem>()
                     .Union(listView1.SelectedItems.Cast<ListViewItem>()).Select(item => (Entity)item.Tag).ToList();
@@ -239,7 +240,6 @@ namespace EmailTemplateMover
         }
         private void lblSource_Env_nm_Click(object sender, EventArgs e)
         {
-
         }
         private void label2_Click(object sender, EventArgs e)
         {
