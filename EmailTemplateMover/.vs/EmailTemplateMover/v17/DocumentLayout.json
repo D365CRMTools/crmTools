@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|c:\\users\\vimra\\source\\repos\\crmtools\\emailtemplatemover\\plugincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|solutionrelative:plugincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|c:\\users\\vimra\\source\\repos\\crmtools\\emailtemplatemover\\plugincontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\plugincontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|solutionrelative:plugincontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\templatesmover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|solutionrelative:templatesmover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDFF62B-C76A-45FF-9A22-B56014D64834}|EmailTemplateMover.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PluginControl.designer.cs",
               "DocumentMoniker": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\PluginControl.designer.cs",
               "RelativeDocumentMoniker": "PluginControl.designer.cs",
@@ -47,32 +47,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PluginControl.cs",
               "DocumentMoniker": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\PluginControl.cs",
               "RelativeDocumentMoniker": "PluginControl.cs",
               "ToolTip": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\PluginControl.cs",
               "RelativeToolTip": "PluginControl.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAADwv00AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-20T16:12:19.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PluginControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\PluginControl.cs",
               "RelativeDocumentMoniker": "PluginControl.cs",
               "ToolTip": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\PluginControl.cs [Design]",
               "RelativeToolTip": "PluginControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-20T16:12:15.869Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-09-20T16:12:15.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TemplatesMover.cs",
               "DocumentMoniker": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\TemplatesMover.cs",
               "RelativeDocumentMoniker": "TemplatesMover.cs",
@@ -84,15 +83,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
               "ToolTip": "C:\\Users\\vimra\\source\\repos\\crmTools\\EmailTemplateMover\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwCIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-19T16:26:53.037Z"
+              "WhenOpened": "2026-09-19T16:26:53.037Z",
+              "EditorCaption": ""
             }
           ]
         }
